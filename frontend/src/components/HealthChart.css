@@ -1,0 +1,48 @@
+/* ── Health Chart ────────────────────────────────────────────── */
+
+.chart-container {
+  padding: 1.5rem;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Tooltip */
+.chart-tooltip {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shadow-lg);
+  font-size: 0.825rem;
+}
+
+[data-theme="dark"] .chart-tooltip {
+  background: var(--gray-800);
+  border-color: var(--gray-700);
+}
+
+.chart-tooltip-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.chart-tooltip-value {
+  font-size: 0.8rem;
+}
+
+.chart-tooltip-value strong {
+  font-weight: 700;
+}
+
+/* Recharts overrides */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  opacity: 0.5;
+}

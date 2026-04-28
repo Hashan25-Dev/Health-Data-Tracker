@@ -1,0 +1,79 @@
+/* ── Prediction Chart ────────────────────────────────────────── */
+
+.prediction-chart {
+  padding: 1.5rem;
+}
+
+.prediction-chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Legend */
+.prediction-legend {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-line {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.legend-line--dashed {
+  background: repeating-linear-gradient(
+    90deg,
+    currentColor 0px,
+    currentColor 5px,
+    transparent 5px,
+    transparent 9px
+  ) !important;
+  height: 3px;
+}
+
+/* Table for prediction values */
+.prediction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.prediction-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.775rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.prediction-table td {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.prediction-table tr:hover td {
+  background: var(--bg-tertiary);
+}
+
+.prediction-table tr:last-child td {
+  border-bottom: none;
+}
